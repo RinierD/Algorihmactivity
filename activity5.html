@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Algorithm-Result</title>
+    </head>
+    <body>
+
+        <script>
+        
+
+        function name(...args){
+            const listNum = [...args];
+            let smallest = listNum[0];
+
+            for(let i=1; i<listNum.length; i++){
+                if(listNum[i] <= smallest){
+                    smallest = listNum[i];   
+                    return smallest
+                }
+            }
+        }
+
+        console.log(name( 4, 21, 5, 11, 2, 23, 17));
+        
+
+        
+        </script>
+    </body>
+</html>
