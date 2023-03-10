@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Algorithm-Result</title>
+    </head>
+    <body>
+
+        <script>
+        
+        // function name(...args){
+        //     const listNum = [...args];
+        //     let oddNum = listNum[0];
+
+
+        //     while(count <= num)  
+        //     {  
+        //         if(count%2 != 0)  
+        //         {  
+        //             sum = sum + count;  
+        //         }  
+        //         listNum++;  
+        //     }  
+        // }
+
+        // console.log(name( 4, 21, 2, 1, 2, 23, 17));
+
+        
+        // function name(...args){
+        //     const listNum = [...args];
+        //     let oddNum = listNum[0];
+        //     let listOdd;
+
+        //     for(let i=1; i<listNum.length; i++){
+        //         if(oddNum[i]%2==0){
+        //             listOdd = oddNum
+        //             console.log("wds" + listOdd)
+        //         }
+        //     }
+            
+        // }
+
+        // console.log(name( 12, 77, 38, 41, 53, 92, 85));
+        
+
+
+
+
+
+
+        
+        // function listNum(...args) {
+        //     const listNum = [...args];
+        //     let smallest = listNum[3];
+        //     let result = 0;
+
+
+        //     for(let i=0; i <listNum.length; i++){
+        //             if (listNum[i] %2 !== 0) {
+        //                 result = result + listNum[i]
+        //                 if (listNum[i] <= smallest){
+        //                     smallest = listNum[i];
+        //                 }
+        //             }
+        //         }
+        //         console.log(result)
+        //         console.log(smallest)
+        //     }
+        //     listNum(12, 77, 38, 41, 53, 92, 85);
+
+
+        // function multiplyAll(arr) {
+        // let smallest = [arr];
+        // let result = 0;
+        // // Only change code below this line
+        // for (let i = 0; i < arr.length; i++) {
+        //     if (arr[i] %2 !== 0) {
+        //         result = result + arr[i];
+        //         smallest = arr[i];
+        //         console.log(result)
+        //         console.log(smallest)
+
+        //         for (let j = 0; j < arr.length; j++) {
+        //             if(result <= smallest){
+        //                 smallest = result;   
+        //                 console.log(smallest)
+        //             }
+        //         }
+        //     }
+            
+            
+        // }
+        // console.log(result)
+        // console.log(smallest)
+        // return result;
+        
+        // }
+
+        // multiplyAll([12, 77, 38, 41, 53, 92, 85]);
+
+        function listNum(...args) {
+            const listNum = [...args];
+            let smallest = listNum[3];
+            let result = 0;
+
+
+            for(let i=0; i <listNum.length; i++){
+                    if (listNum[i] %2 !== 0) {
+                        result = result + listNum[i]
+                        for (let j = 0; j < listNum.length; j++) {
+                            if(result <= smallest){
+                                smallest = result;   
+                                console.log(smallest)
+                            }
+                        }
+
+                    }
+                }
+                console.log(result)
+                console.log(smallest)
+                
+            }
+            listNum(12, 77, 38, 41, 53, 92, 85);
+        </script>
+    </body>
+</html>
