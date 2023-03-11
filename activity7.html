@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Algorithm-Result</title>
+    </head>
+    <body>
+
+        <script>
+
+            // const a = prompt('Enter a first integer: ');
+            // result = 0;
+            // let arr = [];
+            //     for (let i = 0; i < 7; i++) {
+            //     arr.push(prompt('Enter grade ') % 10); 
+            //     if (arr === a){
+            //         result = result + 1
+            //         console.log(result);
+            //     }
+            //     i++
+            // }
+
+            // console.log(result);
+            
+
+            // for(let i=1; i<listNum.length; i++){
+            //     if(listNum[i] <= smallest){
+            //         console.log(listNum)
+            //         smallest = listNum[i];   
+            //         return smallest
+            //     }
+
+            //     return smallest
+            // }
+
+
+
+
+            // const a = prompt('Enter a first integer: ');
+            // const b = prompt('Enter a second integer: ');
+
+            // const result1 = a % 10;
+            // const result2 = b % 10;
+
+            // if(result1 == result2) {
+            //     console.log(`${a}, ${b} have the same last digit.`);
+            // }
+            // else {
+            //     console.log(`${a}, ${b} have different last digit.`);
+            // }
+
+            // var arr = [];
+            // for (var i = 0; i < 7; i++) {              
+            // arr.push(prompt('Enter grade ' + (i+1))); 
+            // }
+            // console.log(arr)
+
+
+
+
+            
+            // const vehiclesNum = parseInt(prompt('Enter a positive integer: '));
+            // function Violation(...args) {
+            // const listNum = [...args];
+            // let smallest = listNum[0];
+            // let result = 0;
+            
+
+            // for(let i=0; i <listNum.length; i++){
+            //         if (listNum[i] % 10) {
+            //             result = result + 1
+            //         }
+            //     }
+            //     console.log(result)
+            //     console.log(listNum)
+                
+            // }
+            // Violation(12, 12, 35, 40, 53, 92, 85);
+
+            // const vehicles = parseInt(prompt('Enter a positive integer: '));
+            // const i = 
+            // var x = 1;
+            // var y = 0;
+            // var z = 0;
+            // while (x <=7 )
+            // {
+            // z = x %  2;
+            // if (z !== 0)
+            // {
+            // var newParagraph1 = document.createElement("p");
+            // var newText1 = document.createTextNode(x);
+            // newParagraph1.appendChild(newText1);
+            // document.body.appendChild(newParagraph1);
+            // y=y+x;
+            // }
+            // x++;
+            // }
+            // var newParagraph1 = document.createElement("p");
+            // var newText1 = document.createTextNode("The sum of even numbers between 0 to 10 is : " + y);
+            // newParagraph1.appendChild(newText1);
+            // document.body.appendChild(newParagraph1);
+
+
+
+
+            // const vehicles = parseInt(prompt('Enter a positive integer: '));
+
+        //     function Violation(...args) {
+        //         const i = [...args]
+        //         var x = 1;
+        //         var y = 0;
+        //         var z = 0;
+        //         while (x <=7 )
+
+        //         {
+        //         z = x %  2;
+        //         if (z !== 0)
+        //         {
+
+        //         var newParagraph1 = document.createElement("p");
+        //         var newText1 = document.createTextNode(x);
+        //         newParagraph1.appendChild(newText1);
+        //         document.body.appendChild(newParagraph1);
+        //         y=y+x;
+        //         }
+        //         x++;
+        //         }
+        //         var newParagraph1 = document.createElement("p");
+        //         var newText1 = document.createTextNode("The sum of even numbers between 0 to 10 is : " + y);
+        //         newParagraph1.appendChild(newText1);
+        //         document.body.appendChild(newParagraph1);
+        //     }
+
+
+        //     Violation(12, 12, 35, 40, 53, 92, 85);
+
+
+
+        // const vehiclesNum = parseInt(prompt('Enter a positive integer: '));
+        // let listNum = 0;
+
+        // let arr = [];
+        //     for (var i = 0; i < 7; i++) {
+        //     arr.push(prompt('Enter grade ' + (i+1))); 
+        //     }
+
+        
+        // console.log(vehiclesNum)
+        // console.log(arr)
+
+
+        function countViolatingCars(vehiclesPlate, args) {
+        let violatingCars = 0;
+
+        for (let i = 0; i < args.length; i++) {
+            const lastDigit = args[i] % 10;
+            if (lastDigit === vehiclesPlate) {
+            violatingCars++;
+            }
+        }
+
+        return violatingCars;
+        }
+        console.log(countViolatingCars(0, [12, 20, 54, 30, 87, 91, 30]));
+
+         </script>
+    </body>
+</html>
